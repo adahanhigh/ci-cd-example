@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
     - name: Загрузка кода
       uses: actions/checkout@v3
 
@@ -15,4 +14,9 @@ jobs:
       run: |
         echo "Проверяем код..."
         ls -la
-        echo "CI успешно выполнен!"
+
+    - name: Проверка кода Python
+      run: python main.py
+
+    - name: CI завершён
+      run: echo "CI успешно выполнен!"
