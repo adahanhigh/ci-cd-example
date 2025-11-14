@@ -18,6 +18,5 @@ jobs:
     - name: Проверка кода Python
       run: python main.py
 
-
     - name: CI завершён
       run: echo "CI успешно выполнен!"
